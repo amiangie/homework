@@ -1,0 +1,111 @@
+.headercart {
+	float: right;
+	position: relative;
+}
+.headercart-summary {
+	display: block;
+	position: relative;
+	box-sizing: content-box;
+	height: 36px;
+	line-height: 36px;
+	padding: 0 10px;
+	font-size: rem-calc(10px);
+	color: $dark-blue;
+	background: $white;
+	margin-right: -5px;
+	border: 5px solid transparent;
+	border-radius: 9px;
+	box-shadow: inset 0px 0px 0px 1px $light-grey;
+	cursor: default;
+}
+.headercart-summary__icon {
+	vertical-align: sub;
+	color: #4c565f;
+}
+.headercart-summary__text {
+	padding: 0 8px 0 6px;
+	font-size: 12px;
+}
+
+.headercart-contents {
+	position: absolute;
+	right: 0;
+	display: none;
+}
+@media screen and (min-width: 726px) {
+	.headercart:hover .headercart-contents {
+		display: block;
+	}
+}
+
+.headercart-contents {
+	width: 280px;
+	border-radius: 4px;
+	border: 1px solid $light-grey;
+	padding: 8px;
+	background: $white;
+	z-index: 2;
+	color: $dark-blue;
+}
+.headercart-products {
+	list-style-type: none;
+	p {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		min-height: 100px;
+		padding: 20px;
+	}
+}
+.headercart-product {
+	+ .headercart-product {
+		margin-top: 5px;
+	}
+	display: flex;
+	align-items: center;
+}
+.headercart-product__image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+	margin-right: 10px;
+	width: 55px;
+	img {
+		max-width: 55px;
+	}
+}
+.headercart-product__name {
+	display: block;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 12px;
+	text-decoration: none;
+	color: $dark-blue;
+}
+.headercart-product__price {
+	font-size: 12px;
+}
+.headercart-product__remove {
+	font-size: 18px;
+	color: $dark-blue;
+	float: right;
+	margin-left: auto;
+}
+.headercart-product__remove,
+.headercart-product__name,
+.headercart-product__image {
+	transition: opacity 0.3s;
+	&:hover {
+		opacity: 0.8;
+		transition: opacity 0.3s;
+	}
+}
+.headercart-button {
+	float: right;
+	margin-top: 7px;
+}
+.headercart-trigger {
+	position: absolute;
+	display: none;
+	right: 0;
+}

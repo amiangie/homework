@@ -1,0 +1,78 @@
+.button {
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #fff;
+	background: $blue;
+	border-radius: 4px;
+	padding: 0 17px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 12px;
+	transition: opacity 0.3s;
+	border: none;
+	&:hover {
+		opacity: 0.8;
+		transition: opacity 0.3s;
+	}
+	&--wide {
+		padding: 0 23px;
+	}
+	&:focus {
+		outline: 0;
+		box-shadow: inset 0px 0px 0px 1px $darkest-blue;
+	}
+}
+.input {
+	border: none;
+	padding: 0;
+	border-radius: 4px;
+	color: $dark-grey;
+	font-size: 12px;
+	height: 30px;
+	padding: 0 10px 0 10px;
+	outline: 0;
+	&:focus {
+		box-shadow: inset 0px 0px 0px 1px $blue;
+	}
+}
+.input--email {
+	position: relative;
+	padding: 0 10px 0 38px;
+}
+.input--email-label {
+	.fa-envelope-o {
+		position: absolute;
+		z-index: 2;
+		line-height: 1;
+		left: 8px;
+		top: 4px;
+		color: #4c565f;
+		font-size: 20px;
+	}
+}
+::-webkit-input-placeholder {
+	opacity: 1;
+	color: #999999;
+	font-family: 'Arial', sans-serif;
+	font-size: 12px;
+}
+:-moz-placeholder {
+	opacity: 1;
+	color: #999999;
+	font-family: 'Arial', sans-serif;
+	font-size: 12px;
+}
+::-moz-placeholder {
+	opacity: 1;
+	color: #999999;
+	font-family: 'Arial', sans-serif;
+	font-size: 12px;
+}
+:-ms-input-placeholder {  
+	opacity: 1;
+	color: #999999;
+	font-family: 'Arial', sans-serif;
+	font-size: 12px;
+}

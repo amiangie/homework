@@ -1,0 +1,47 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700);
+
+::selection { 
+	background: $blue; 
+	color: #fff;
+}
+html, body {
+	width: 100%;
+	height: 100%;
+}
+body {
+	background: $white;
+	color: $dark-grey;
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	border-top: 20px solid $blue;
+	padding-top: $gap;
+}
+
+.global-wrap {
+	width: 940px;
+	margin: 0 auto;
+}
+
+.page-section {
+	margin-top: $gap;
+}
+
+.grid-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 0 0 $gap/-1;
+	.grid-item {
+		padding: 0 0 0 $gap;
+		flex: 1 0 0%;
+	}
+	.grid-item--right {
+		box-sizing: border-box;
+		padding-left: 80px + $gap;
+	}
+	@for $i from 1 through $grid-columns-count {
+		.grid-item--#{$i} {
+			flex: 0 0 calc(#{$i} / #{$grid-columns-count} * 100%);
+			max-width: calc(#{$i} / #{$grid-columns-count} * 100%);
+		}
+	}
+}

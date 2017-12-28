@@ -1,0 +1,40 @@
+.product {
+	
+}
+.product-image {
+	display: block;
+	border: 1px solid $light-grey;
+	padding: 5px 10px;
+	transition: opacity 0.2s;
+	&:hover {
+		opacity: 0.8;
+		transition: opacity 0.2s;
+	}
+}
+.product-image img {
+	max-width: 100%;
+}
+.product-info {
+	text-align: center;
+	margin-top: auto;
+}
+.product__name {
+	font-size: 14px;
+	text-transform: uppercase;
+	line-height: 1;
+	margin: 1.5em 0 0 0;
+	a {
+		color: $dark-blue;
+		text-decoration: none;
+		transition: opacity 0.2s;
+		&:hover {
+			opacity: 0.8;
+			transition: opacity 0.2s;
+		}
+	}
+}
+.product__price {
+	margin-bottom: 0.8em;
+	margin-top: 0.7em;
+	line-height: 1;
+}

@@ -1,0 +1,51 @@
+h1 {
+	font-size: 42px;
+	line-height: 0.8;
+}
+h2 {
+	font-size: 24px;
+	text-transform: uppercase;
+	line-height: 1.2em;
+	margin-top: 0.3em;
+}
+.highlight {
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 1.2em;
+	margin-top: 0.5em;
+}
+.section-title {
+	font-size: 24px;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: $dark-blue;
+	border-bottom: 2px solid;
+	margin-bottom: $gap + (0.4*24)+0px;
+	line-height: 1;
+	margin-top: -0.4em;
+	span {
+		position: relative;
+		background: $white;
+		margin-top: 10px;
+		margin-left: 30px;
+		top: 0.4em;
+		padding: 0 16px;
+	}
+}
+.red {
+	color: $red;
+}
+.hidden {
+	display: none;
+}
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.visuallyhidden {
+	border: 0; 
+	clip: rect(0 0 0 0); 
+	height: 1px; 
+	margin: -1px; 
+	overflow: hidden; 
+	padding: 0; 
+	position: absolute; 
+	width: 1px;
+}
